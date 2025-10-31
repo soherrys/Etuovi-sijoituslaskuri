@@ -14,3 +14,9 @@ def hae_asunnot():
         except:
             continue
     return kohteet
+
+if __name__ == "__main__":
+    kohteet = hae_asunnot()
+    print("Löytyi", len(kohteet), "kohdetta")
+    for k in kohteet:
+        print(k)
