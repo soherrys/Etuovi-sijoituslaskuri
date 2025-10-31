@@ -1,6 +1,4 @@
 flask
 requests
 beautifulsoup4
-beautifulsoup4
-flask
-requests
+selenium
