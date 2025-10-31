@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sijoitusasunnot Kajaanissa</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Kajaanin yksiöt ja kaksiot</h1>
+    {% for k in kohteet %}
+        <div class="kortti">
+            <h2>{{ k.nimi }}</h2>
+            <p>Hinta: €{{ k.hinta }}</p>
+            <p>Vuokratuotto: {{ k.vuokratuotto }}%</p>
+            <p>Kassavirta: €{{ k.kassavirta }}/kk</p>
+            <p>ROI: {{ k.roi }}%</p>
+        </div>
+    {% endfor %}
+</body>
+</html>
